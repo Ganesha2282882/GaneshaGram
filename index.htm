@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GaneshaGram</title>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+<script type="text/javascript"  src="dist/sanitize-html.js"></script>
+<script src = "firebase.js"></script>
+  </head>
+  <body>
+    <center><span class = "h1">G Gram</span></center><br/>
+    <p class = "center">This is a social media website that will automatically update with new posts. If you want to compose a post, Click on the "➕" button.</p>
+    <div class = "createPost hidden">
+      <h3>Create A Post!</h3><hr>
+      <input placeholder = "Your Name" id = "username" required><br/>
+      <input placeholder = "Post Title" id = "title" required><br/>
+      <textarea placeholder = "Describe this post" id = "about" rows = "5"></textarea><br>
+      <button id = "submit">Create Post!</button>
+    </div><hr>
+    <h2 class = "center">Most Recent Post</h2>
+    <div id = "aaaa">
+      <div id = "postCard" class = "post">
+      <h2 id = "a"></h2>
+      <p id = "b"></p><hr/>
+      <p id = "c"></p>
+    </div>
+    <hr>
+    <h2 class = "center">From The Moment</h2>
+    </div>
+    <div class = "footer"><i id = "newpostbutton" class = "fas fa-plus"></i></div>
+    <script src = "firebase.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
